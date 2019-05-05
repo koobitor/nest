@@ -15,7 +15,7 @@
     "mongodb": "^2.2.31",
     "reflect-metadata": "^0.1.12",
     "rxjs": "^6.0.0",
-    "typeorm": "^0.1.12",
+    "typeorm": "^0.2.15",
     "typescript": "^2.8.0"
   },
   "devDependencies": {
