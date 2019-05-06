@@ -6,7 +6,9 @@
   "scripts": {
     "start": "ts-node src/main.ts",
     "prestart:prod": "tsc",
-    "start:prod": "node dist/main.js"
+    "start:prod": "node dist/main.js",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
     "@grpc/proto-loader": "^0.3.0",
@@ -20,11 +22,13 @@
     "grpc": "^1.10.0",
     "reflect-metadata": "^0.1.12",
     "rxjs": "^6.1.0",
-    "typescript": "^2.8.0"
+    "typescript": "^2.8.0",
+    "snyk": "^1.161.1"
   },
   "devDependencies": {
     "@types/node": "^7.0.41",
     "ts-node": "^6.0.0",
     "tslint": "^5.9.1"
-  }
+  },
+  "snyk": true
 }
